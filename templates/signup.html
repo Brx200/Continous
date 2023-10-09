@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="imp">
+        <form action="{{url_for('signup')}}" method='post'>
+
+            
+            <label for="Username">Username</label>
+            <br>
+            <input type="text" Name="Username">
+    
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" Name="Password">
+    
+            <br>
+            <label for="Phone number">Phone Number</label>
+            <br>
+            <input type="number" Name="Phone_number">
+    
+            <br>
+            <label for="Address">Address</label>
+            <br>
+            <textarea name="Address" id="" cols="30" rows="10"></textarea>
+    
+            <br>
+            <label for="Gender">Select Gender</label>
+            <br>
+            <select name="Gender">
+            <br>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+    
+            </select>
+            
+            <br>
+            <button type="submit">Login</button>
+            <p>Already a Member <a href="login.html">Log in</a></p>
+        </form>
+    </div>
+</body>
+</html>
